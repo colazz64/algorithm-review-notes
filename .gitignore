@@ -1,0 +1,21 @@
+# Obsidian local settings
+.obsidian/
+.trash/
+
+# Windows / macOS system files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
+
+# OneDrive conflict files
+*conflicted copy*
+*Conflicted Copy*
+*冲突*
+
+# Local scratch notes
+drafts/
+upload/
