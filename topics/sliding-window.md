@@ -146,3 +146,56 @@ class Solution:
 - Forgetting to remove the left-side element.
 - Using `i - k` instead of `i - k + 1`.
 - Recomputing the whole window sum every time.
+## Representative Problems
+
+| Problem | Collections | Window Type | Key Idea |
+|---|---|---|---|
+| [3. Longest Substring Without Repeating Characters](../problems/0003-longest-substring-without-repeating-characters.md) | Hot100, NeetCode150 | Variable-size | Move `left` when a duplicate character appears |
+| [438. Find All Anagrams in a String](../problems/0438-find-all-anagrams-in-a-string.md) | Hot100 | Fixed-size | Keep window size equal to `len(p)` and compare frequency counts |
+
+## Variable-size Sliding Window
+
+Used when the window size is not fixed and depends on whether the current window is valid.
+
+Example:
+
+```python
+left = 0
+
+for right in range(len(s)):
+    # add s[right]
+
+    while window is invalid:
+        # remove s[left]
+        left += 1
+
+    # update answer
+```
+
+Problem 3 can be optimized with a HashMap, so we can jump `left` directly instead of moving it one step at a time.
+
+```python
+left = max(left, last_seen[ch] + 1)
+```
+
+## Fixed-size Sliding Window
+
+Used when the window size is fixed.
+
+Example:
+
+```python
+left = 0
+
+for right in range(len(s)):
+    # add s[right]
+
+    if right - left + 1 > k:
+        # remove s[left]
+        left += 1
+
+    if right - left + 1 == k:
+        # update answer
+```
+
+Problem 438 uses this pattern because every anagram of `p` must have length `len(p)`.
