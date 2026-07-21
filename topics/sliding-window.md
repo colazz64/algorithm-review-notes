@@ -199,3 +199,88 @@ for right in range(len(s)):
 ```
 
 Problem 438 uses this pattern because every anagram of `p` must have length `len(p)`.
+
+## Fixed-size vs Variable-size Sliding Window
+
+### Variable-size Window
+
+Representative problem:
+
+- [3. Longest Substring Without Repeating Characters](../problems/0003-longest-substring-without-repeating-characters.md)
+
+The window size changes based on whether the current window is valid.
+
+For problem 3, when a duplicate character appears, move `left`.
+
+HashMap jump version:
+
+```python
+left = max(left, last_seen[ch] + 1)
+```
+
+Count array version:
+
+```java
+int[] cnt = new int[128];
+
+for (int right = 0; right < n; right++) {
+    char c = s[right];
+    cnt[c]++;
+
+    while (cnt[c] > 1) {
+        cnt[s[left]]--;
+        left++;
+    }
+
+    ans = Math.max(ans, right - left + 1);
+}
+```
+
+### Fixed-size Window
+
+Representative problem:
+
+- [438. Find All Anagrams in a String](../problems/0438-find-all-anagrams-in-a-string.md)
+
+The window size is fixed as `p.length()`.
+
+Template:
+
+```java
+for (int right = 0; right < s.length(); right++) {
+    windowCount[s.charAt(right) - 'a']++;
+
+    int left = right - p.length() + 1;
+
+    if (left < 0) {
+        continue;
+    }
+
+    if (Arrays.equals(pCount, windowCount)) {
+        result.add(left);
+    }
+
+    windowCount[s.charAt(left) - 'a']--;
+}
+```
+
+## ASCII Count Array Note
+
+For ASCII characters, Java can use:
+
+```java
+int[] cnt = new int[128];
+cnt[c]++;
+```
+
+Because `char` can be used as an integer index.
+
+Example:
+
+```text
+'a' -> 97
+'A' -> 65
+'0' -> 48
+```
+
+This avoids using `ch - 'a'`, but it only works safely when the character range is covered by the array length.

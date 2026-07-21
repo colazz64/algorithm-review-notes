@@ -17,12 +17,11 @@ Each problem can also be connected to topic notes in:
 
 ## Current Progress
 
-| Status | Count |
-|---|---:|
-| Done | 5 |
-| In Progress | 0 |
-| Not Started | 95 |
-
+| Status      | Count |
+| ----------- | ----: |
+| Done        |     8 |
+| In Progress |     0 |
+| Not Started |    92 |
 ## Recently Added
 
 | # | Problem | Topics | Problem Note | Status |
