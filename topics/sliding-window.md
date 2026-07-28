@@ -284,3 +284,41 @@ Example:
 ```
 
 This avoids using `ch - 'a'`, but it only works safely when the character range is covered by the array length.
+
+## Sliding Window Maximum / Monotonic Queue
+
+Representative problem:
+
+- [239. Sliding Window Maximum](../problems/0239-sliding-window-maximum.md)
+
+This is a fixed-size sliding window problem, but a normal window count is not enough.
+
+Because each window needs the maximum value, we use a monotonic queue.
+
+Key idea:
+
+```text
+The deque stores indices.
+The values are kept in decreasing order.
+The front is the maximum of the current window.
+```
+
+Java core logic:
+
+```java
+while (!deque.isEmpty() && nums[deque.peekLast()] <= current) {
+    deque.pollLast();
+}
+
+deque.offerLast(i);
+
+int left = i - k + 1;
+
+while (!deque.isEmpty() && deque.peekFirst() < left) {
+    deque.pollFirst();
+}
+
+if (i >= k - 1) {
+    ans[index++] = nums[deque.peekFirst()];
+}
+```

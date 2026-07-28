@@ -15,22 +15,25 @@ Each problem can also be connected to topic notes in:
 ../topics/
 ```
 
-## Current Progress
+## ## Current Progress
 
 | Status      | Count |
 | ----------- | ----: |
-| Done        |     8 |
+| Done        |     9 |
 | In Progress |     0 |
-| Not Started |    92 |
+| Not Started |    91 |
+
+
+
 ## Recently Added
 
-| # | Problem | Topics | Problem Note | Status |
-|---|---|---|---|---|
-| 11 | Container With Most Water | [Two Pointers](../topics/two-pointers.md), Array | [0011](../problems/0011-container-with-most-water.md) | Done |
-| 15 | 3Sum | [Two Pointers](../topics/two-pointers.md), Sorting | [0015](../problems/0015-3sum.md) | Done |
-| 128 | Longest Consecutive Sequence | [HashSet](../topics/hash-set.md), Array | [0128](../problems/0128-longest-consecutive-sequence.md) | Done |
-| 283 | Move Zeroes | [Two Pointers](../topics/two-pointers.md), Array | [0283](../problems/0283-move-zeroes.md) | Done |
-
+| #   | Problem                      | Topics                                                                                         | Problem Note                                             | Status |
+| --- | ---------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------ |
+| 11  | Container With Most Water    | [Two Pointers](../topics/two-pointers.md), Array                                               | [0011](../problems/0011-container-with-most-water.md)    | Done   |
+| 15  | 3Sum                         | [Two Pointers](../topics/two-pointers.md), Sorting                                             | [0015](../problems/0015-3sum.md)                         | Done   |
+| 128 | Longest Consecutive Sequence | [HashSet](../topics/hash-set.md), Array                                                        | [0128](../problems/0128-longest-consecutive-sequence.md) | Done   |
+| 283 | Move Zeroes                  | [Two Pointers](../topics/two-pointers.md), Array                                               | [0283](../problems/0283-move-zeroes.md)                  | Done   |
+| 239 | Sliding Window Maximum       | [Sliding Window](../topics/sliding-window.md), [Monotonic Queue](../topics/monotonic-queue.md) | [0239](../problems/0239-sliding-window-maximum.md)       | Done   |
 ## Hash / Set
 
 | # | Problem | Topics | Problem Note | Status |
@@ -57,12 +60,12 @@ Each problem can also be connected to topic notes in:
 
 ## Subarray / Prefix Sum / Monotonic Queue
 
-| # | Problem | Topics | Problem Note | Status |
-|---|---|---|---|---|
-| 560 | Subarray Sum Equals K | Prefix Sum, HashMap | - | Not Started |
-| 239 | Sliding Window Maximum | Monotonic Queue, Sliding Window | - | Not Started |
-| 76 | Minimum Window Substring | Sliding Window, HashMap | - | Not Started |
-
+| #   | Problem                  | Topics                                                                                         | Problem Note                                       | Status      |
+| --- | ------------------------ | ---------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------- |
+| 560 | Subarray Sum Equals K    | Prefix Sum, HashMap                                                                            | -                                                  | Not Started |
+| 239 | Sliding Window Maximum   | Monotonic Queue, Sliding Window                                                                | -                                                  | Not Started |
+| 76  | Minimum Window Substring | Sliding Window, HashMap                                                                        | -                                                  | Not Started |
+| 239 | Sliding Window Maximum   | [Monotonic Queue](../topics/monotonic-queue.md), [Sliding Window](../topics/sliding-window.md) | [0239](../problems/0239-sliding-window-maximum.md) | Done        |
 ## Array
 
 | # | Problem | Topics | Problem Note | Status |
