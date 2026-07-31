@@ -15,14 +15,13 @@ Each problem can also be connected to topic notes in:
 ../topics/
 ```
 
-## ## Current Progress
+## Current Progress
 
 | Status      | Count |
 | ----------- | ----: |
-| Done        |     9 |
+| Done        |    10 |
 | In Progress |     0 |
-| Not Started |    91 |
-
+| Not Started |    90 |
 
 
 ## Recently Added
@@ -34,6 +33,10 @@ Each problem can also be connected to topic notes in:
 | 128 | Longest Consecutive Sequence | [HashSet](../topics/hash-set.md), Array                                                        | [0128](../problems/0128-longest-consecutive-sequence.md) | Done   |
 | 283 | Move Zeroes                  | [Two Pointers](../topics/two-pointers.md), Array                                               | [0283](../problems/0283-move-zeroes.md)                  | Done   |
 | 239 | Sliding Window Maximum       | [Sliding Window](../topics/sliding-window.md), [Monotonic Queue](../topics/monotonic-queue.md) | [0239](../problems/0239-sliding-window-maximum.md)       | Done   |
+| 53  | Maximum Subarray             | [Dynamic Programming](../topics/dynamic-programming.md), [Array](../topics/array.md)           | [0053](../problems/0053-maximum-subarray.md)             | Done   |
+
+
+
 ## Hash / Set
 
 | # | Problem | Topics | Problem Note | Status |
@@ -68,13 +71,15 @@ Each problem can also be connected to topic notes in:
 | 239 | Sliding Window Maximum   | [Monotonic Queue](../topics/monotonic-queue.md), [Sliding Window](../topics/sliding-window.md) | [0239](../problems/0239-sliding-window-maximum.md) | Done        |
 ## Array
 
-| # | Problem | Topics | Problem Note | Status |
-|---|---|---|---|---|
-| 53 | Maximum Subarray | Dynamic Programming, Array | - | Not Started |
-| 56 | Merge Intervals | Sorting, Array | - | Not Started |
-| 189 | Rotate Array | Array, Two Pointers | - | Not Started |
-| 238 | Product of Array Except Self | Prefix Product, Array | - | Not Started |
-| 41 | First Missing Positive | Array, In-place Hashing | - | Not Started |
+| #   | Problem                      | Topics                                                                               | Problem Note                                 | Status      |
+| --- | ---------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------- | ----------- |
+| 53  | Maximum Subarray             | Dynamic Programming, Array                                                           | -                                            | Not Started |
+| 56  | Merge Intervals              | Sorting, Array                                                                       | -                                            | Not Started |
+| 189 | Rotate Array                 | Array, Two Pointers                                                                  | -                                            | Not Started |
+| 238 | Product of Array Except Self | Prefix Product, Array                                                                | -                                            | Not Started |
+| 41  | First Missing Positive       | Array, In-place Hashing                                                              | -                                            | Not Started |
+| 53  | Maximum Subarray             | [Dynamic Programming](../topics/dynamic-programming.md), [Array](../topics/array.md) | [0053](../problems/0053-maximum-subarray.md) | Done        |
+
 
 ## Matrix
 
@@ -216,13 +221,13 @@ Each problem can also be connected to topic notes in:
 
 ## Review Priority
 
-| Priority | Problem | Reason |
-|---|---|---|
-| High | [15. 3Sum](../problems/0015-3sum.md) | Duplicate handling and pointer movement are easy to get wrong |
-| High | [128. Longest Consecutive Sequence](../problems/0128-longest-consecutive-sequence.md) | Need to remember the `num - 1` start-point check |
-| Medium | [11. Container With Most Water](../problems/0011-container-with-most-water.md) | Need to explain why moving the shorter wall works |
-| Medium | [283. Move Zeroes](../problems/0283-move-zeroes.md) | Classic in-place two-pointer pattern |
-
+| Priority | Problem                                                                               | Reason                                                        |
+| -------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| High     | [15. 3Sum](../problems/0015-3sum.md)                                                  | Duplicate handling and pointer movement are easy to get wrong |
+| High     | [128. Longest Consecutive Sequence](../problems/0128-longest-consecutive-sequence.md) | Need to remember the `num - 1` start-point check              |
+| Medium   | [11. Container With Most Water](../problems/0011-container-with-most-water.md)        | Need to explain why moving the shorter wall works             |
+| Medium   | [283. Move Zeroes](../problems/0283-move-zeroes.md)                                   | Classic in-place two-pointer pattern                          |
+| High     | [53. Maximum Subarray](../problems/0053-maximum-subarray.md)                          | Kadane transition and initialization are important            |
 ## Maintenance Rules
 
 - Full explanations go into `../problems/`.
